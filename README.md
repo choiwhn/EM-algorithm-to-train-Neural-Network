@@ -19,22 +19,12 @@ $$log L_c(\boldsymbol{\Psi};y,z,x) \propto log P(Y,Z|x;\boldsymbol{\Psi}) = log 
 $$Q(\boldsymbol{\Psi},\boldsymbol{\Psi}^{(k)}) = E_{\boldsymbol{\Psi}^{(k)}}[log L_c(\boldsymbol{\Psi};y,z,x)|y,x]$$
 
 
-by marginalising over all $2^{m}$ latent configurations (or a Monte
-Carlo approximation for large *m*).
 
 ### M‑step
 
-Maximise $Q$ w\.r.t. $\Psi$.  Because closed‑form updates are
-intractable, a gradient ascent step is applied separately to the *w*
-and *v* blocks:
+$\Psi^{(k)}$ is updated by taking $\Psi^{(k+1)}$ be the value of $\Psi$ that maximizes $Q$-function
 
-$$
-  \mathbf w_h^{(k+1)} = \mathbf w_h^{(k)} + \eta\,\nabla_{\mathbf w_h} Q_w,
-  \qquad
-  \mathbf v_i^{(k+1)} = \mathbf v_i^{(k)} + \eta\,\nabla_{\mathbf v_i} Q_v.
-$$
-
----
+$$\Psi^{(k+1)} = argmax_{\Psi}(Q(\Psi;\Psi^{(k+1)}))$$
 
 ## Python Implementation Outline
 
