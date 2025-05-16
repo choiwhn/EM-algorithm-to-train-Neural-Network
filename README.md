@@ -2,7 +2,7 @@
 
 
 ## EM Algorithm and Multiclass Classification
-Assume multiclass classification with $g$ groups, 
+Assume multiclass classification with $g$ groups, $G_1, ..., G_g$
 
 Problem: Infer the unknown membership of an unclassified entity with feature vector of $p$-dimensions 
 
@@ -25,6 +25,8 @@ $$Q(\boldsymbol{\Psi},\boldsymbol{\Psi}^{(k)}) = E_{\boldsymbol{\Psi}^{(k)}}[log
 $\Psi^{(k)}$ is updated by taking $\Psi^{(k+1)}$ be the value of $\Psi$ that maximizes $Q$-function
 
 $$\Psi^{(k+1)} = argmax_{\Psi}(Q(\Psi;\Psi^{(k)}))$$
+
+
 
 ## Python Implementation Outline
 
