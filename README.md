@@ -28,7 +28,9 @@ $$\Psi^{(k+1)} = argmax_{\Psi}(Q(\Psi;\Psi^{(k)}))$$
 
 ## EM in MLP
 consider MLP(Multi-Layer Perceptron) neural network with one hidden layer of m units.
+
 Note that sigmoid and softmax function is used as activation function for each layer respectively.
+
 ![image](https://github.com/user-attachments/assets/54cd486c-841e-4079-8696-966fda31ff42)
 
 assume $z_{hj}$ be the realization of the zero-one random variable $Z_{hj}$. $h=1,...,m, j=1,...,n$
