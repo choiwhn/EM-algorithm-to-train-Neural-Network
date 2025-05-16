@@ -82,7 +82,7 @@ Set the differentiationa of $Q_w$ with respect to $w$ as 0..
 
 Then, we take $w_h^{(k+1)}=argmax Q_w$.
 
-$${\nabla_{w_h} Q_w} = \sum_{j=1}$$
+$${\nabla_{w_h} Q_w} = \sum_{j=1}\left[E_{\Psi^{(k)}} (Z_{hj}|y,x) - u_{hj} \right]x_j =0, \quad (h=1,\ldots,m)$$
 
 ## Python Implementation Outline
 
