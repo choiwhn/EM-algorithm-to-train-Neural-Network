@@ -49,7 +49,7 @@ then, the conditional distribution of $Y_{ij}$ given $x_j, z_j$ is as:
 
 $$P(Y_{ij}=1|x_j,z_j) = \frac{exp(v_i^Tz_j)}{\sum_{r=1}^g exp(v_r^Tz_j)}$$
 
-**Goal:** Find ML estimate for unknown parameters $\Psi = (w_1^\top)$
+**Goal:** Find ML estimate for unknown parameters $\Psi = (w_1^T,w_2^T,\ldots,v_1^T,v_2^T,\ldots.v_{g-1}^T)^T$ through **EM steps** using complete-data log likelihood $L_c(\Psi;y,z,x)$
 
 
 
