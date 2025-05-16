@@ -34,11 +34,15 @@ assume $z_{hj}$ be the realization of the zero-one random variable $Z_{hj}$. $h=
 
 let Synaptic weight of the $h$th hidden unit as: $w_h = (w_{h0},w_{h1},...,w_{hp},)$, \ where bias term $w_{h0}$ is included in $w_h$ by adding a constant input $x_{0j} = 1$
 
-then, the conditional distribution given $x_j$ is as:
+then, the conditional distribution of $Z_{hj}$ given $x_j$ is as:
 
 $$P(Z_{hj}=1|x_j) = \frac{exp(w_h^Tx_j)}{1+exp(w_h^Tx_j)}$$
 
+similarly, let Synaptic weight of the $i$th output unit as: $v_i = (v_{i0},v_{i1},...,v_{im},), i=1,...,g$
 
+then, the conditional distribution of $Y_{ij}$ given $x_j, z_j$ is as:
+
+$$P(Y_{ij}=1|x_j,z_j) = \frac{exp(v_i^Tz_j)}{\Sum_{r=1}^g exp(v_r^Tz_j)}$$
 
 ## Python Implementation Outline
 
