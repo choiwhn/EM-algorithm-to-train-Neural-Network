@@ -51,11 +51,13 @@ $$P(Y_{ij}=1|x_j,z_j) = \frac{exp(v_i^Tz_j)}{\sum_{r=1}^g exp(v_r^Tz_j)}$$
 
 **Goal:** Find ML estimate for unknown parameters $\Psi = (w_1^T,w_2^T,\ldots,w_m^T,v_1^T,v_2^T,\ldots,v_{g-1}^T)^T$ through **EM steps** using complete-data log likelihood $L_c(\Psi;y,z,x)$
 
-Recall 
+Recall that
 
 $$\log L_c{\Psi;y,z,x} \propto \log pr(Y,Z|x;\Psi) = \log pr(Y|x,z;\Psi) + \log pr(Z|x; \Psi)$$
 
+Then, the complete-data log likelihood for $\Psi$ is
 
+$$\sum_{j=1}^n\left\{ \sum_{h=1}^m \left[z_{hj} \log {u_{hj} \over 1-u_{hj}} + \log(1-u_{hj}) + \sum_{i=1}^g y_{ij}\log o_{ij} \right]\right\}$$
 
 
 
