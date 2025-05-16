@@ -14,11 +14,11 @@ Let $(x_1^T, y_1^T)^T,\;\dots,\;(x_n^T, y_n^T)^T$ be the $n$ examples available 
 
 Compute the Q‑function as:
 
-$\log L_c(\Psi; y, z, x)\propto \log\pr(Y,Z\mid x;\Psi)
+$$\log L_c(\Psi; y, z, x)\propto \log\pr(Y,Z\mid x;\Psi)
 =\;\log\pr(Y\mid x,z;\Psi)\;+\;\log\pr(Z\mid x;\Psi)
 
 Q(\Psi;\Psi^{(k)})
-=E_{\Psi^{(k)}}\bigl\{\log L_c(\Psi; y, z, x)\mid y, x\bigr\}$
+=E_{\Psi^{(k)}}\bigl\{\log L_c(\Psi; y, z, x)\mid y, x\bigr\}$$
 
 $$
   Q(\Psi\mid\Psi^{(k)})
