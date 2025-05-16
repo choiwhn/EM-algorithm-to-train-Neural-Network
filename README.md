@@ -57,7 +57,7 @@ $$\log L_c{\Psi;y,z,x} \propto \log pr(Y,Z|x;\Psi) = \log pr(Y|x,z;\Psi) + \log 
 
 Then, the complete-data log likelihood for $\Psi$ is
 
-$$\sum_{j=1}^n\left\{ \sum_{h=1}^m \left[z_{hj} \log {u_{hj} \over 1-u_{hj}} + \log(1-u_{hj}) + \sum_{i=1}^g y_{ij}\log o_{ij} \right]\right\}$$
+$$\sum_{j=1}^n\left{ \sum_{h=1}^m \left[z_{hj} \log {u_{hj} \over 1-u_{hj}} + \log(1-u_{hj}) + \sum_{i=1}^g y_{ij}\log o_{ij} \right]\right}$$
 
 
 
