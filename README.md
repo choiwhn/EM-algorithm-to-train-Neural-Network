@@ -1,5 +1,6 @@
 # EM-algorithm-to-train-Neural-Network
 
+This repository contains an implementation of the multi-class neural network trained via the EM algorithm as an alternative to backpropagation a model. we implemented both models entirely with NumPy and evaluated their performance on the Iris dataset, comparing EM-based training with stochastic gradient descent(SGD)
 
 ## EM Algorithm and Multiclass Classification
 Assume multiclass classification with $g$ groups, $G_1, ..., G_g$
@@ -63,13 +64,23 @@ where $z_{hj}\  \log ({u_{hj} (1-u_{hj})^{-1}}) + \log(1-u_{hj})$ is linear in $
 
 We will calculate the expectation of the complete-data log likelihood $\log L_c(\Psi;y,z,x)$ conditional on the current estimate $\Psi^{(k)}$ and the observed input and output vectors.
 
+## E-step & M-step
+
 - **E-step : **
 
 Compute the Q-function 
 
 $$Q(\Psi;\Psi^{(k)}) = E_{\Psi^{(k)}} \left[ \log L_c(\Psi;y,z,x) | y,x\right] = \sum_{j=1}^n \sum_{h=1}^m \left[ E_{\Psi^{(k)}} (Z_{hj} | y,x) \log{u_{hj} \over 1-u_{hj}} + \log(1-u_{hj})\right] + \sum_{j=1}^{n}\sum_{i=1}^g y_{ij} E_{\Psi^{(k)}}(o_{ij}|y,x) = Q_w + Q_v$$
 
-Complete-data 
+Marginalizing out all possible $Z$ in complete-data log likelihood yields the following Q-function. 
+
+We can update $w$ and $v$ by finding $w$ and $v$ which maximize the $Q_w$ and $Q_v$, respectively.
+
+- **M-step* : *
+
+Set the differentiationa of $Q_w$ with respect to $w$ as 0/
+
+Then, we take $w_h^{(k+1)}=\argmax Q_w$
 
 ## Python Implementation Outline
 
