@@ -16,7 +16,7 @@ Compute the Q‑function as:
 
 $$log L_c(\boldsymbol{\Psi};y,z,x) \propto log P(Y,Z|x;\boldsymbol{\Psi}) = log P(Y|x,z;\boldsymbol{\Psi}) + log P(Z|x;\boldsymbol{\Psi})$$
 
-$$Q(\boldsymbol{\Psi},\boldsymbol{\Psi}^{(k)}) = E_{\boldsymbol{\Psi}^{(k)}}{log L_c(\boldsymbol{\Psi};y,z,x)|y,x}$$
+$$Q(\boldsymbol{\Psi},\boldsymbol{\Psi}^{(k)}) = E_{\boldsymbol{\Psi}^{(k)}}[log L_c(\boldsymbol{\Psi};y,z,x)|y,x]$$
 
 
 by marginalising over all $2^{m}$ latent configurations (or a Monte
