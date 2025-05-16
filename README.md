@@ -100,7 +100,7 @@ We use the gradient descent method since we cannot obtain our new parameters as 
 
 ## Discussion and Conclusion
 
-Areas for Improvement in the Code Implementation Process
+- Areas for Improvement in the Code Implementation Process
 
 1. Computational efficiency in E-step.
    
@@ -109,4 +109,29 @@ Since vectorized operations like matrix multiplication are difficult to apply wh
 2. Hyperparameter tuning.
 
 Use Cross-validation.
+
+- Comparison of the Backpropagation Method and Neural Network Training
+
+**Backpropagation**
+
+1. Fast convergence in practice
+Gradient-descent methods typically converge more quickly and handle complex loss landscapes well.
+
+2. Efficient gradient computation:
+The algorithm repeatedly computes the gradient of the loss function, making it generally efficient.
+
+3. Distribution-agnostic error signal:
+Because the loss depends only on the difference between predicted and true values, it works regardless of the data’s underlying distribution.
+
+**Expectation–Maximization (EM)**
+
+1. Slower, alternating updates:
+Alternating between E-steps and M-steps can slow convergence—especially in high-dimensional problems where finding a stable solution may be difficult.
+
+2. High computational cost:
+EM must consider all combinations of latent (hidden) variables at each iteration, which becomes very expensive and inefficient on large datasets.
+
+3. Model‐assumption sensitivity:
+Since EM relies on estimating latent variables under assumed distributions, performance can degrade if those assumptions poorly reflect the true data.
+
 
