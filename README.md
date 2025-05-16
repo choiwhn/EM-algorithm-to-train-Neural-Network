@@ -67,7 +67,7 @@ We will calculate the expectation of the complete-data log likelihood $\log L_c(
 
 Compute the Q-function 
 
-$$Q(\Psi;\Psi^{(k)}) = E_{\Psi^{(k)}} \left[ \log L_c(\Psi;y,z,x) | y,x\right] = \sum_{j=1} \sum_{h=1}^m \left[ E_{\Psi^{(k)}} (Z_{hj} | y,x) \times \log{u_{hj} \over 1-u_{hj}} + \log(1-u_{hj})\right]
+$$Q(\Psi;\Psi^{(k)}) = E_{\Psi^{(k)}} \left[ \log L_c(\Psi;y,z,x) | y,x\right] = \sum_{j=1} \sum_{h=1}^m \left[ E_{\Psi^{(k)}} (Z_{hj} | y,x) \times \log{u_{hj} \over 1-u_{hj}} + \log(1-u_{hj})\right]$$
 
 
 ## Python Implementation Outline
