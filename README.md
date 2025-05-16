@@ -69,6 +69,8 @@ Compute the Q-function
 
 $$Q(\Psi;\Psi^{(k)}) = E_{\Psi^{(k)}} \left[ \log L_c(\Psi;y,z,x) | y,x\right] = \sum_{j=1}^n \sum_{h=1}^m \left[ E_{\Psi^{(k)}} (Z_{hj} | y,x) \log{u_{hj} \over 1-u_{hj}} + \log(1-u_{hj})\right] + \sum_{j=1}^{n}\sum_{i=1}^g y_{ij} E_{\Psi^{(k)}}(o_{ij}|y,x) = Q_w + Q_v$$
 
+Complete-data 
+
 ## Python Implementation Outline
 
 1. **Data preparation**   Load the *Iris* data set, apply one‑hot
