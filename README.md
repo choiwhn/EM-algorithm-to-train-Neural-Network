@@ -38,6 +38,8 @@ then, the conditional distribution of $Z_{hj}$ given $x_j$ is as:
 
 $$P(Z_{hj}=1|x_j) = \frac{exp(w_h^Tx_j)}{1+exp(w_h^Tx_j)}$$
 
+![image](https://github.com/user-attachments/assets/750c75d5-a8f3-4727-854b-8df02d1790f6)
+
 similarly, let Synaptic weight of the $i$th output unit as: $v_i = (v_{i0},v_{i1},...,v_{im},), i=1,...,g$
 
 then, the conditional distribution of $Y_{ij}$ given $x_j, z_j$ is as:
