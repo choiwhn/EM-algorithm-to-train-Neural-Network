@@ -88,6 +88,11 @@ where
 
 $$E_{\Psi^{(k)}} (Z_{hj}|y,x) = { \sum_{z_j : z_{hj} =1 }p_{\Psi^{(k)}}(x_j,y_j,z_j)  \over \sum_{z_j}p_{\Psi^{(k)}}(x_j,y_j,z_j) }$$
 
+and 
+
+$$p_{\Psi^{(k)}}(x_j,y_j,z_j) = \prod_{h=1}^m u_{hj}^{z_{hj}}(1-u_{hj})^{(1-z_{hj})} \prod_{i=1}^g o_{ij}^{y_{ij}}$$.
+
+
 
 ## Python Implementation Outline
 
