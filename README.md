@@ -61,6 +61,13 @@ $$\sum_{j=1}^n\left[ \sum_{h=1}^m [z_{hj}\  \log {u_{hj} \over 1-u_{hj}} + \log(
 
 where $z_{hj}\  \log ({u_{hj} (1-u_{hj})^{-1}}) + \log(1-u_{hj})$ is linear in $z$ whereas $\sum_{i=1}^g y_{ij}\ \log o_{ij}$ is nonlinear in $z$. 
 
+We will calculate the expectation of the complete-data log likelihood $\log L_c(\Psi;y,z,x)$ conditional on the current estimate $\Psi^{(k)}$ and the observed input and output vectors.
+
+- **E-step : **
+
+Compute the Q-function 
+
+$$Q(\Psi;\Psi^{(k)}) = E_{\Psi^{(k)}} \left[ \log L_c(\Psi;y,z,x) | y,x\right] = \sum_{j=1} \sum_{h=1}^m \left[ E_{\Psi^{(k)}} (Z_{hj} | y,x) \times \log{u_{hj} \over 1-u_{hj}} + \log(1-u_{hj})\right]
 
 
 ## Python Implementation Outline
