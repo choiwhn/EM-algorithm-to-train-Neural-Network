@@ -30,9 +30,9 @@ $$\Psi^{(k+1)} = argmax_{\Psi}(Q(\Psi;\Psi^{(k)}))$$
 consider MLP(Multi-Layer Perceptron) neural network with one hidden layer of m units.
 ![image](https://github.com/user-attachments/assets/54cd486c-841e-4079-8696-966fda31ff42)
 
-assume $z_{hj}$ be the realization of the zero-one random variable $Z_{hj}$. $h=1,...,m, \ j=1,...,n$
+assume $z_{hj}$ be the realization of the zero-one random variable $Z_{hj}$. $h=1,...,m, \\ j=1,...,n$
 
-let Synaptic weight of the $h$ th hidden unit as: $w_h = (w_{h0},w_{h1},...,w_{hp},)$, \ where bias term $w_{h0}$ is included in $w_h$ by adding a constant input $x_{0j} = 1$
+let Synaptic weight of the $h$ th hidden unit as: $w_h = (w_{h0},w_{h1},...,w_{hp},)$, \\ where bias term $w_{h0}$ is included in $w_h$ by adding a constant input $x_{0j} = 1$
 
 then, the conditional distribution of $Z_{hj}$ given $x_j$ is as:
 
@@ -40,7 +40,7 @@ $$P(Z_{hj}=1|x_j) = \frac{exp(w_h^Tx_j)}{1+exp(w_h^Tx_j)}$$
 
 ![image](https://github.com/user-attachments/assets/750c75d5-a8f3-4727-854b-8df02d1790f6)
 
-similarly, let Synaptic weight of the $i$th output unit as: $v_i = (v_{i0},v_{i1},...,v_{im},), i=1,...,g$
+similarly, let Synaptic weight of the $i$ th output unit as: $v_i = (v_{i0},v_{i1},...,v_{im},), i=1,...,g$
 
 then, the conditional distribution of $Y_{ij}$ given $x_j, z_j$ is as:
 
