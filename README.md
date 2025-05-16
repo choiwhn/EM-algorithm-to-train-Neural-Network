@@ -94,7 +94,7 @@ $$p_{\Psi^{(k)}}(x_j,y_j,z_j) = \prod_{h=1}^m u_{hj}^{z_{hj}}(1-u_{hj})^{(1-z_{h
 
 Set the gradient of $Q_v$ with respect to $v$ as 0, and then we take $v_i^{(k+1)} = argmax Q_v$.
 
-$$\nabla_{v_i}Q_v = \sum_{j=1}^n \left[y_{ij} E_{\Psi^{(k)}} (Z_{hj}|y,x) - {sum_{z_j : z_{hj} =1 } o_{ij} p_{\Psi^{(k)}}(x_j,y_j,z_j)  \over \sum_{z_j}p_{\Psi^{(k)}}(x_j,y_j,z_j)} \right]
+$$\nabla_{v_i}Q_v = \sum_{j=1}^n \left[y_{ij} E_{\Psi^{(k)}} (Z_{hj}|y,x) - {sum_{z_j : z_{hj} =1 } o_{ij} p_{\Psi^{(k)}}(x_j,y_j,z_j)  \over \sum_{z_j}p_{\Psi^{(k)}}(x_j,y_j,z_j)} \right]$$
 
 
 ## Python Implementation Outline
