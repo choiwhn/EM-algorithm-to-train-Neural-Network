@@ -100,4 +100,13 @@ We use the gradient descent method since we cannot obtain our new parameters as 
 
 ## Discussion and Conclusion
 
+Areas for Improvement in the Code Implementation Process
+
+1. Computational efficiency in E-step.
+   
+Since vectorized operations like matrix multiplication are difficult to apply when implementing the E-step, one can use Monte Carlo methods to reduce computational cost.
+
+2. Hyperparameter tuning.
+
+Use Cross-validation.
 
