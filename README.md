@@ -74,7 +74,7 @@ $$Q(\Psi;\Psi^{(k)}) = E_{\Psi^{(k)}} \left[ \log L_c(\Psi;y,z,x) | y,x\right] =
 
 Marginalizing out all possible $Z$ in complete-data log likelihood yields the following Q-function. 
 
-We can update $w$ and $v$ by finding $w$ and $v$ which maximize the $Q_w$ and $Q_v$, respectively.
+We can update $w$ and $v$ by finding such $w$ and $v$ which maximize the $Q_w$ and $Q_v$, respectively.
 
 - **M-step :**
 
@@ -100,7 +100,7 @@ We use the gradient descent method since we cannot obtain our new parameters as 
 
 ## Discussion and Conclusion
 
-- Areas for Improvement in the Code Implementation Process
+- **Areas for Improvement in the Code Implementation Process**
 
 1. Computational efficiency in E-step.
    
@@ -110,11 +110,11 @@ Since vectorized operations like matrix multiplication are difficult to apply wh
 
 Use Cross-validation.
 
-- Comparison of the Backpropagation Method and Neural Network Training
+- **Comparison of the Backpropagation Method and Neural Network Training**
 
-**Backpropagation**
+Backpropagation
 
-1. Fast convergence in practice
+1. Fast convergence in practice: 
 Gradient-descent methods typically converge more quickly and handle complex loss landscapes well.
 
 2. Efficient gradient computation:
@@ -123,7 +123,7 @@ The algorithm repeatedly computes the gradient of the loss function, making it g
 3. Distribution-agnostic error signal:
 Because the loss depends only on the difference between predicted and true values, it works regardless of the data’s underlying distribution.
 
-**Expectation–Maximization (EM)**
+Expectation–Maximization (EM)
 
 1. Slower, alternating updates:
 Alternating between E-steps and M-steps can slow convergence—especially in high-dimensional problems where finding a stable solution may be difficult.
