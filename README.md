@@ -66,7 +66,7 @@ We will calculate the expectation of the complete-data log likelihood $\log L_c(
 
 ## E-step & M-step
 
-- **E-step : **
+- **E-step :**
 
 Compute the Q-function 
 
@@ -76,7 +76,7 @@ Marginalizing out all possible $Z$ in complete-data log likelihood yields the fo
 
 We can update $w$ and $v$ by finding $w$ and $v$ which maximize the $Q_w$ and $Q_v$, respectively.
 
-- **M-step : **
+- **M-step :**
 
 Set the differentiationa of $Q_w$ with respect to $w$ as 0..
 
@@ -86,9 +86,7 @@ $${\nabla_{w_h} Q_w} = \sum_{j=1}\left[E_{\Psi^{(k)}} (Z_{hj}|y,x) - u_{hj} \rig
 
 where 
 
-$$
-E_{\Psi^{(k)}} (Z_{hj}|y,x) - u_{hj} \right] = { \sum_{z_j : z_{hj} =1 }pr_{\Psi^{(k)}}(x_j,y_j,z_j)  \over \sum_{z_j}pr_{\Psi^{(k)}}(x_j,y_j,z_j) } 
-$$
+$$E_{\Psi^{(k)}} (Z_{hj}|y,x) = { \sum_{z_j : z_{hj} =1 }pr_{\Psi^{(k)}}(x_j,y_j,z_j)  \over \sum_{z_j}pr_{\Psi^{(k)}}(x_j,y_j,z_j) }$$
 
 
 ## Python Implementation Outline
