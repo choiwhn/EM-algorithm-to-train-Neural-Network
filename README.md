@@ -59,7 +59,7 @@ Then, the complete-data log likelihood for $\Psi$ is
 
 $$\sum_{j=1}^n\left[ \sum_{h=1}^m [z_{hj}\  \log {u_{hj} \over 1-u_{hj}} + \log(1-u_{hj})] + \sum_{i=1}^g y_{ij}\ \log o_{ij} \right],$$
 
-where $z_{hj}\  \log {u_{hj} (1-u_{hj})^{-1}} + \log(1-u_{hj})$ is linear in $z$ whereas $\sum_{i=1}^g y_{ij}\ \log o_{ij}$ is nonlinear in $z$. 
+where $z_{hj}\  \log ({u_{hj} (1-u_{hj})^{-1}}) + \log(1-u_{hj})$ is linear in $z$ whereas $\sum_{i=1}^g y_{ij}\ \log o_{ij}$ is nonlinear in $z$. 
 
 
 
