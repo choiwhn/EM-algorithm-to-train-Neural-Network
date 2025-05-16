@@ -86,7 +86,7 @@ $${\nabla_{w_h} Q_w} = \sum_{j=1}\left[E_{\Psi^{(k)}} (Z_{hj}|y,x) - u_{hj} \rig
 
 where 
 
-$$E_{\Psi^{(k)}} (Z_{hj}|y,x) = { \sum_{z_j : z_{hj} =1 }pr_{\Psi^{(k)}}(x_j,y_j,z_j)  \over \sum_{z_j}pr_{\Psi^{(k)}}(x_j,y_j,z_j) }$$
+$$E_{\Psi^{(k)}} (Z_{hj}|y,x) = { \sum_{z_j : z_{hj} =1 }p_{\Psi^{(k)}}(x_j,y_j,z_j)  \over \sum_{z_j}p_{\Psi^{(k)}}(x_j,y_j,z_j) }$$
 
 
 ## Python Implementation Outline
