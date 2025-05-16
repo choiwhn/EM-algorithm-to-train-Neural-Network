@@ -6,7 +6,7 @@ Assume multiclass classification with $g$ groups, $G_1, ..., G_g$
 
 Problem: Infer the unknown membership of an unclassified entity with feature vector of $p$-dimensions 
 
-Let $(\textbf{x}_1^T, y_1^T)^T,\;\dots,\;(x_n^T, y_n^T)^T$ be the $n$ examples available for training the neural network and $z$ be missing data or latent variable
+Let $(x_1^T, y_1^T)^T,\;\dots,\;(x_n^T, y_n^T)^T$ be the $n$ examples available for training the neural network and $z$ be missing data or latent variable
 
 
 
@@ -37,7 +37,7 @@ assume $z_{hj}$ be the realization of the zero-one random variable $Z_{hj}$. $h=
 
 let Synaptic weight of the $h$ th hidden unit as: $w_h = (w_{h0},w_{h1},...,w_{hp},)$, where bias term $w_{h0}$ is included in $w_h$ by adding a constant input $x_{0j} = 1$
 
-then, the conditional distribution of $Z_{hj}$ given $x_j$ is as:
+then, the 4conditional distribution of $Z_{hj}$ given $x_j$ is as:
 
 $$P(Z_{hj}=1|x_j) = \frac{exp(w_h^Tx_j)}{1+exp(w_h^Tx_j)}$$
 
@@ -49,7 +49,7 @@ then, the conditional distribution of $Y_{ij}$ given $x_j, z_j$ is as:
 
 $$P(Y_{ij}=1|x_j,z_j) = \frac{exp(v_i^Tz_j)}{\sum_{r=1}^g exp(v_r^Tz_j)}$$
 
-
+**Goal:** Find ML estimate for unknown parameters $\Psi = (w_1^\top)$
 
 
 
