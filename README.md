@@ -14,7 +14,7 @@ Let $(x_1^T, y_1^T)^T,\;\dots,\;(x_n^T, y_n^T)^T$ be the $n$ examples available 
 
 Compute the Q‑function as:
 
-$$log L_c(\psi)$$
+$$log L_c(\boldsymbol{\psi};y,z,x) \propto log P(Y,Z|x;\boldsymbol{\psi})$$
 
 
 by marginalising over all $2^{m}$ latent configurations (or a Monte
