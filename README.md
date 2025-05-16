@@ -139,7 +139,7 @@ Since EM relies on estimating latent variables under assumed distributions, perf
 Hence, EM becomes infeasible beyond shallow networks in Deep Learning.
 
 1. Explosive time complexity:
-2. In a shallow network with $m$ hidden units, the E-step already incurs an $O(2^m)$ cost to enumerate all possible hidden-unit configurations. Adding more layers multiplies these possibilities, so runtime grows explosively.
+In a shallow network with $m$ hidden units, the E-step already incurs an $O(2^m)$ cost to enumerate all possible hidden-unit configurations. Adding more layers multiplies these possibilities, so runtime grows explosively.
 
 3. Slow Convergence:
 Given its substantial time complexity, the EM algorithm becomes even less efficient when applied to deep learning.
