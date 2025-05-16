@@ -26,6 +26,12 @@ $\Psi^{(k)}$ is updated by taking $\Psi^{(k+1)}$ be the value of $\Psi$ that max
 
 $$\Psi^{(k+1)} = argmax_{\Psi}(Q(\Psi;\Psi^{(k)}))$$
 
+## EM in MLP
+consider MLP(Multi-Layer Perceptron) neural network with one hidden layer of m units.
+![image](https://github.com/user-attachments/assets/54cd486c-841e-4079-8696-966fda31ff42)
+
+$z_{hj}$ be the realization of the zero-one random variable $Z_{hj}$, $h=1,...,m, j=1,...,n$
+
 
 
 ## Python Implementation Outline
