@@ -76,11 +76,13 @@ Marginalizing out all possible $Z$ in complete-data log likelihood yields the fo
 
 We can update $w$ and $v$ by finding $w$ and $v$ which maximize the $Q_w$ and $Q_v$, respectively.
 
-- **M-step* : *
+- **M-step : **
 
-Set the differentiationa of $Q_w$ with respect to $w$ as 0/
+Set the differentiationa of $Q_w$ with respect to $w$ as 0..
 
-Then, we take $w_h^{(k+1)}=\argmax Q_w$
+Then, we take $w_h^{(k+1)}=argmax Q_w$.
+
+$$ {\partial Q_w \over \partial h}
 
 ## Python Implementation Outline
 
