@@ -82,7 +82,7 @@ Set the differentiationa of $Q_w$ with respect to $w$ as 0..
 
 Then, we take $w_h^{(k+1)}=argmax Q_w$.
 
-$${\partial Q_w \over \partial h}$$
+$${\nabla Q_w \over \partial h} = \sum_{j=1}$$
 
 ## Python Implementation Outline
 
