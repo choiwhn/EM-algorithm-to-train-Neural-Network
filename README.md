@@ -30,9 +30,9 @@ $$\Psi^{(k+1)} = argmax_{\Psi}(Q(\Psi;\Psi^{(k)}))$$
 consider MLP(Multi-Layer Perceptron) neural network with one hidden layer of m units.
 ![image](https://github.com/user-attachments/assets/54cd486c-841e-4079-8696-966fda31ff42)
 
-assume $z_{hj}$ be the realization of the zero-one random variable $Z_{hj}$. $h=1,...,m, \\ j=1,...,n$
+assume $z_{hj}$ be the realization of the zero-one random variable $Z_{hj}$. $h=1,...,m, j=1,...,n$
 
-let Synaptic weight of the $h$ th hidden unit as: $w_h = (w_{h0},w_{h1},...,w_{hp},)$, \\ where bias term $w_{h0}$ is included in $w_h$ by adding a constant input $x_{0j} = 1$
+let Synaptic weight of the $h$ th hidden unit as: $w_h = (w_{h0},w_{h1},...,w_{hp},)$, where bias term $w_{h0}$ is included in $w_h$ by adding a constant input $x_{0j} = 1$
 
 then, the conditional distribution of $Z_{hj}$ given $x_j$ is as:
 
