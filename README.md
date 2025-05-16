@@ -1,7 +1,7 @@
 # EM-algorithm-to-train-Neural-Network
 
 
-## EM Algorithm and Multiclass Classification
+## EM Algorithm and Multiclass Classification
 Assume multiclass classification with $g$ groups, Problem: Infer the unknown membership of an unclassified entity with feature vector of $p$-dimensions Let  be the n examples available for training the neural network and $z$ be missing data or latent variable
 
 
