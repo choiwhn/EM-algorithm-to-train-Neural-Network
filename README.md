@@ -6,7 +6,7 @@ Assume multiclass classification with $g$ groups,
 
 Problem: Infer the unknown membership of an unclassified entity with feature vector of $p$-dimensions 
 
-Let $(\x_1^T, y_1^T)^T,\;\dots,\;(x_n^T, y_n^T)^T$ be the $n$ examples available for training the neural network and $z$ be missing data or latent variable
+Let $(x_1^T, y_1^T)^T,\;\dots,\;(x_n^T, y_n^T)^T$ be the $n$ examples available for training the neural network and $z$ be missing data or latent variable
 
 
 
@@ -24,7 +24,7 @@ $$Q(\boldsymbol{\Psi},\boldsymbol{\Psi}^{(k)}) = E_{\boldsymbol{\Psi}^{(k)}}[log
 
 $\Psi^{(k)}$ is updated by taking $\Psi^{(k+1)}$ be the value of $\Psi$ that maximizes $Q$-function
 
-$$\Psi^{(k+1)} = argmax_{\Psi}(Q(\Psi;\Psi^{(k+1)}))$$
+$$\Psi^{(k+1)} = argmax_{\Psi}(Q(\Psi;\Psi^{(k)}))$$
 
 ## Python Implementation Outline
 
