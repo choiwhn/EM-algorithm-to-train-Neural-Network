@@ -6,7 +6,7 @@ Assume multiclass classification with $g$ groups,
 
 Problem: Infer the unknown membership of an unclassified entity with feature vector of $p$-dimensions 
 
-Let $(x_1^T, y_1^T)^T,\;\dots,\;(x_n^T, y_n^T)^T$ be the $n$ examples available for training the neural network and $z$ be missing data or latent variable
+Let $(\mathbf{x}_1^T, y_1^T)^T,\;\dots,\;(x_n^T, y_n^T)^T$ be the $n$ examples available for training the neural network and $z$ be missing data or latent variable
 
 
 
@@ -14,9 +14,9 @@ Let $(x_1^T, y_1^T)^T,\;\dots,\;(x_n^T, y_n^T)^T$ be the $n$ examples available 
 
 Compute the Q‑function as:
 
-$$log L_c(\mathbf{\psi};y,z,x) \propto log P(Y,Z|x;\boldsymbol{\psi}) = log P(Y|x,z;\boldsymbol{\psi}) + log P(Z|x;\boldsymbol{\psi})$$
+$$log L_c(\boldsymbol{\Psi};y,z,x) \propto log P(Y,Z|x;\boldsymbol{\Psi}) = log P(Y|x,z;\boldsymbol{\Psi}) + log P(Z|x;\boldsymbol{\Psi})$$
 
-$$Q(\boldsymbol{\psi},\boldsymbol{\psi}^{(k)}) = E_{\boldsymbol{\psi}^{(k)}}\{log L_c(\boldsymbol{\psi};y,z,x)|y,x\}$$
+$$Q(\boldsymbol{\Psi},\boldsymbol{\Psi}^{(k)}) = E_{\boldsymbol{\Psi}^{(k)}}\{log L_c(\boldsymbol{\Psi};y,z,x)|y,x\}$$
 
 
 by marginalising over all $2^{m}$ latent configurations (or a Monte
