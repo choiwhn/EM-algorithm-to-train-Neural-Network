@@ -119,11 +119,26 @@ We use the gradient descent method since we cannot obtain our new parameters as 
 
 ## implementation details
 
-iris data of y is one-hot encoded
-used sigmoid and softmax activation function for each layer respectively.
+ - Iris labels are one-hot encoded.
+
+Activations: sigmoid in the hidden layer; softmax in the output layer.
+
 the method '**E_step_W**' computes $\nabla_{w_h}Q_w$. likewise, the method '**E_step_V**' computes $\nabla_{v_i}Q_v$
+
 and the method '**M_step**' optimizes next network parameter by gradient descent.
 
+
+Iris labels ($oldsymbol{y}$) are one-hot encoded.
+
+Activations: sigmoid in the hidden layer; softmax in the output layer.
+
+\(E_step_W) computes the gradients $
+abla_{w_h}Q_{oldsymbol{w}}$ for the hidden weights.
+
+E_step_V computes the gradients $
+abla_{v_i}Q_{oldsymbol{v}}$ for the output weights.
+
+M_step updates all parameters via gradient descent.
 ---
 
 ## Experiment result
