@@ -147,7 +147,7 @@ Accuracy(EM) = 93.33% & Accuracy(SGD) = 96.67%
 ### **Areas for Improvement in the Code Implementation Process**
 
 1. Computational efficiency in E-step.
-   - vectorized operations like matrix multiplication are difficult to apply when implementing the E-step
+   - vectorized operations like matrix multiplication are difficult to apply when implementing the '**E_step**'
    - Unnecessary repetition was introduced during the implementation of '**E_step**'
 
 2. Hyperparameter tuning.
