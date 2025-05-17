@@ -144,7 +144,7 @@ Accuracy(EM) = 93.33% & Accuracy(SGD) = 96.67%
 
 ## Discussion and Conclusion
 
-**Areas for Improvement in the Code Implementation Process**
+### **Areas for Improvement in the Code Implementation Process**
 
 1. Computational efficiency in E-step.
    - vectorized operations like matrix multiplication are difficult to apply when implementing the E-step
@@ -153,7 +153,7 @@ Accuracy(EM) = 93.33% & Accuracy(SGD) = 96.67%
 2. Hyperparameter tuning.
    - To optimize hyperparameters, employ cross-validation.
 
-**Comparison of the Backpropagation Method and Neural Network Training**
+### **Comparison of the Backpropagation Method and Neural Network Training**
 
 Backpropagation(SGD)
 
@@ -178,7 +178,7 @@ Expectation–Maximization (EM)
 3. Model‐assumption sensitivity:
    - Since EM relies on estimating latent variables under assumed distributions, performance can degrade if those assumptions poorly reflect the true data.
 
-**Conclusion**
+### **Conclusion**
 
 Hence, EM becomes infeasible beyond shallow networks in Deep Learning.
 
