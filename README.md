@@ -13,7 +13,6 @@ Problem: Infer the unknown membership of an unclassified entity with feature vec
 Let $(x_1^T, y_1^T)^T,\;\dots,\;(x_n^T, y_n^T)^T$ be the $n$ examples available for training the neural network and $z$ be missing data or latent variable
 
 
----
 
 ### E‑step
 
@@ -30,6 +29,8 @@ $$log L_c(\boldsymbol{\Psi};y,z,x) \propto log P(Y,Z|x;\boldsymbol{\Psi}) = log 
 $\Psi^{(k)}$ is updated by taking $\Psi^{(k+1)}$ be the value of $\Psi$ that maximizes $Q$-function
 
 $$\Psi^{(k+1)} = argmax_{\Psi}(Q(\Psi;\Psi^{(k)})) = argmax_{\Psi}(log P(Y|x,z;\boldsymbol{\Psi}) + log P(Z|x;\boldsymbol{\Psi}))$$
+
+---
 
 ## EM in MLP
 consider MLP(Multi-Layer Perceptron) neural network with one hidden layer of m units.
@@ -53,6 +54,8 @@ similarly, let Synaptic weight of the $i$ th output unit as: $v_i = (v_{i0},v_{i
 then, the conditional distribution of $Y_{ij}$ given $x_j, z_j$ is as:
 
 $$P(Y_{ij}=1|x_j,z_j) = \frac{exp(v_i^Tz_j)}{\sum_{r=1}^g exp(v_r^Tz_j)}$$
+
+---
 
 **Goal:** Find ML estimate for unknown parameters $\Psi = (w_1^T,w_2^T,\ldots,w_m^T,v_1^T,v_2^T,\ldots,v_{g-1}^T)^T$ through **EM steps** using complete-data log likelihood $L_c(\Psi;y,z,x)$
 
@@ -101,6 +104,8 @@ Set the gradient of $Q_v$ with respect to $v$ as 0, and then we take $v_i^{(k+1)
 $$\nabla_{v_i}Q_v = \sum_{j=1}^n \left[y_{ij} E_{\Psi^{(k)}} (Z_{hj}|y,x) - {\sum_{z_j : z_{hj} =1 } o_{ij} p_{\Psi^{(k)}}(x_j,y_j,z_j)  \over \sum_{z_j}p_{\Psi^{(k)}}(x_j,y_j,z_j)} \right]=0.$$
 
 We use the gradient descent method since we cannot obtain our new parameters as a closed form.
+
+---
 
 ## Discussion and Conclusion
 
