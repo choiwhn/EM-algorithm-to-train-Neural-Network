@@ -5,6 +5,7 @@ This repository contains an implementation of the multi-class neural network tra
 ---
 
 ## EM Algorithm and Multiclass Classification
+
 Assume multiclass classification with $g$ groups, $G_1, ..., G_g$
 
 Problem: Infer the unknown membership of an unclassified entity with feature vector of $p$-dimensions 
@@ -12,6 +13,7 @@ Problem: Infer the unknown membership of an unclassified entity with feature vec
 Let $(x_1^T, y_1^T)^T,\;\dots,\;(x_n^T, y_n^T)^T$ be the $n$ examples available for training the neural network and $z$ be missing data or latent variable
 
 
+---
 
 ### E‑step
 
