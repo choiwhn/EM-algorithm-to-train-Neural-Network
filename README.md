@@ -107,48 +107,72 @@ We use the gradient descent method since we cannot obtain our new parameters as 
 
 ---
 
+## implementation details
+
+iris data of y is one-hot encoded
+used sigmoid and softmax activation function for each layer respectively.
+the method '**E_step_W**' computes $\nabla_{w_h}Q_w$. likewise, the method '**E_step_V**' computes $\nabla_{v_i}Q_v$
+and the method '**M_step**' optimizes next network parameter by gradient descent.
+
+---
+
+## Experiment result
+
+### hyperparameter for each model & convergence rate comparison plot
+![image](https://github.com/user-attachments/assets/b88d8ce2-170e-4fd4-9e81-5d0bdc68a188)
+
+note that convergence rate via EM algorithm is remarkblely slow than backpropagation.
+
+### Accuracy & new prediction sampling (10 from test dataset)
+![image](https://github.com/user-attachments/assets/ff98baab-ef64-4508-9a6a-2bcc1bfa3bcb)
+
+Acurracy(SGD) = 96.67% 
+Acurracy(EM) = 93.33%
+
+---
+
 ## Discussion and Conclusion
 
 - **Areas for Improvement in the Code Implementation Process**
 
 1. Computational efficiency in E-step.
-   
-Since vectorized operations like matrix multiplication are difficult to apply when implementing the E-step, one can use Monte Carlo methods to reduce computational cost.
+   - vectorized operations like matrix multiplication are difficult to apply when implementing the E-step
+   - Unnecessary repetition was introduced during the code implementation
 
 2. Hyperparameter tuning.
-
-Use Cross-validation.
+   - for optimizing hyperparameters, Using Cross-validation would be a way.
 
 - **Comparison of the Backpropagation Method and Neural Network Training**
 
-Backpropagation
+Backpropagation(SGD)
 
-1. Fast convergence in practice: 
-Gradient-descent methods typically converge more quickly and handle complex loss landscapes well.
+1. Fast convergence: 
+   - Gradient-descent methods typically converge more quickly and handle complex loss landscapes well.
 
 2. Efficient gradient computation:
-The algorithm repeatedly computes the gradient of the loss function, making it generally efficient.
+   - The algorithm repeatedly computes the gradient of the loss function, making it generally efficient.
 
 3. Distribution-agnostic error signal:
-Because the loss depends only on the difference between predicted and true values, it works regardless of the data’s underlying distribution.
+   - Because the loss depends only on the difference between predicted and true values, it works regardless of the data’s underlying distribution.
 
 Expectation–Maximization (EM)
 
 1. Slower, alternating updates:
-Alternating between E-steps and M-steps can slow convergence—especially in high-dimensional problems where finding a stable solution may be difficult.
+   - Alternating between E-steps and M-steps can slow convergence—especially in high-dimensional problems where finding a stable solution may be difficult.
 
 2. High computational cost:
-EM must consider all combinations of latent (hidden) variables at each iteration, which becomes very expensive and inefficient on large datasets.
+   - At each iteration, EM must evaluate all possible combinations of the latent variables—leading to a time complexity of $O(2^m)$ — which becomes prohibitively expensive and inefficient on large datasets
+   - Optimizing the updated parameters in the M-step via gradient descent incurs additional computational cost
 
 3. Model‐assumption sensitivity:
-Since EM relies on estimating latent variables under assumed distributions, performance can degrade if those assumptions poorly reflect the true data.
+   - Since EM relies on estimating latent variables under assumed distributions, performance can degrade if those assumptions poorly reflect the true data.
 
 - **Conclusion**
 
 Hence, EM becomes infeasible beyond shallow networks in Deep Learning.
 
 1. Explosive time complexity:
-In a shallow network with $m$ hidden units, the E-step already incurs an $O(2^m)$ cost to enumerate all possible hidden-unit configurations. Adding more layers multiplies these possibilities, so runtime grows explosively.
+In a shallow network with $m$ hidden units, the E-step already incurs an $O(2^m*)$ cost to enumerate all possible hidden-unit configurations. Adding more layers multiplies these possibilities, so runtime grows explosively.
 
-3. Slow Convergence:
+2. Slow Convergence:
 Given its substantial time complexity, the EM algorithm becomes even less efficient when applied to deep learning.
