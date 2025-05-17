@@ -2,8 +2,6 @@
 
 This repository contains an implementation of the multi-class neural network trained via the EM algorithm as an alternative to backpropagation a model. we implemented both models entirely with NumPy and evaluated their performance on the Iris dataset, comparing EM-based training with stochastic gradient descent(SGD)
 
-$\log$
-
 ---
 
 ## EM Algorithm and Multiclass Classification
@@ -20,9 +18,9 @@ Let $(x_1^T, y_1^T)^T,\;\dots,\;(x_n^T, y_n^T)^T$ be the $n$ examples available 
 
 Compute the Q‑function as:
 
-$$Q(\boldsymbol{\Psi},\boldsymbol{\Psi}^{(k)}) = E_{\boldsymbol{\Psi}^{(k)}}[log L_c(\boldsymbol{\Psi};y,z,x)|y,x]$$
+$$Q(\boldsymbol{\Psi},\boldsymbol{\Psi}^{(k)}) = E_{\boldsymbol{\Psi}^{(k)}}[\log L_c(\boldsymbol{\Psi};y,z,x)|y,x]$$
 
-$$log L_c(\boldsymbol{\Psi};y,z,x) \propto log p(Y,Z|x;\boldsymbol{\Psi}) = log p(Y|x,z;\boldsymbol{\Psi}) + log p(Z|x;\boldsymbol{\Psi})$$
+$$\log L_c(\boldsymbol{\Psi};y,z,x) \propto \log p(Y,Z|x;\boldsymbol{\Psi}) = \log p(Y|x,z;\boldsymbol{\Psi}) + \log p(Z|x;\boldsymbol{\Psi})$$
 
 
 
