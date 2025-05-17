@@ -25,7 +25,7 @@ $$log L_c(\boldsymbol{\Psi};y,z,x) \propto log P(Y,Z|x;\boldsymbol{\Psi}) = log 
 
 $\Psi^{(k)}$ is updated by taking $\Psi^{(k+1)}$ be the value of $\Psi$ that maximizes $Q$-function
 
-$$\Psi^{(k+1)} = argmax_{\Psi}(Q(\Psi;\Psi^{(k)}))$$
+$$\Psi^{(k+1)} = argmax_{\Psi}(Q(\Psi;\Psi^{(k)})) = argmax_{\Psi}(log P(Y|x,z;\boldsymbol{\Psi}) + log P(Z|x;\boldsymbol{\Psi}))$$
 
 ## EM in MLP
 consider MLP(Multi-Layer Perceptron) neural network with one hidden layer of m units.
