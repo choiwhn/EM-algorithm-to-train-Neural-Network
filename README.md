@@ -119,26 +119,16 @@ We use the gradient descent method since we cannot obtain our new parameters as 
 
 ## implementation details
 
- - Iris labels are one-hot encoded.
+   - Iris labels are one-hot encoded.
 
-Activations: sigmoid in the hidden layer; softmax in the output layer.
+   - t
 
-the method '**E_step_W**' computes $\nabla_{w_h}Q_w$. likewise, the method '**E_step_V**' computes $\nabla_{v_i}Q_v$
+   - Activations: sigmoid in the hidden layer; softmax in the output layer.
 
-and the method '**M_step**' optimizes next network parameter by gradient descent.
+   - the method '**E_step_W**' computes $\nabla_{w_h}Q_w$ for the hidden weights. likewise, the method '**E_step_V**' computes $\nabla_{v_i}Q_v$ for the output weights.
 
+   - the method '**M_step**' updates all parameters via gradient descent.
 
-Iris labels ($oldsymbol{y}$) are one-hot encoded.
-
-Activations: sigmoid in the hidden layer; softmax in the output layer.
-
-\(E_step_W\) computes the gradients $
-abla_{w_h}Q_{oldsymbol{w}}$ for the hidden weights.
-
-E_step_V computes the gradients $
-abla_{v_i}Q_{oldsymbol{v}}$ for the output weights.
-
-M_step updates all parameters via gradient descent.
 ---
 
 ## Experiment result
@@ -151,8 +141,7 @@ note that convergence rate via EM algorithm is remarkblely slow than backpropaga
 ### Accuracy & new prediction sampling (10 from test dataset)
 ![image](https://github.com/user-attachments/assets/ff98baab-ef64-4508-9a6a-2bcc1bfa3bcb)
 
-Accuracy(SGD) = 96.67% 
-Accuracy(EM) = 93.33%
+Accuracy(SGD) = 96.67%  & Accuracy(EM) = 93.33%
 
 ---
 
