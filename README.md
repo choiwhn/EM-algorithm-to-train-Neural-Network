@@ -50,7 +50,7 @@ Assume $z_{hj}$ be the realization of the zero-one random variable $Z_{hj}$. $h=
 
 Let Synaptic weight of the $h$ th hidden unit as: $w_h = (w_{h0},w_{h1},...,w_{hp},)$, where bias term $w_{h0}$ is included in $w_h$ by adding a constant input $x_{0j} = 1$
 
-then, the 4conditional distribution of $Z_{hj}$ given $x_j$ is as:
+then, the conditional distribution of $Z_{hj}$ given $x_j$ is as:
 
 $$P(Z_{hj}=1|x_j) = \frac{exp(w_h^Tx_j)}{1+exp(w_h^Tx_j)}$$
 
