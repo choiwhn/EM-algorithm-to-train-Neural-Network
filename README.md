@@ -88,7 +88,7 @@ $$Q(\Psi;\Psi^{(k)}) = E_{\Psi^{(k)}} \left[ \log (L_c(\Psi;y,z,x)) | y,x\right]
 
 Marginalizing out all possible $Z$ in complete-data log likelihood yields the following Q-function. 
 
-We can update $w$ and $v$ by finding such $w$ and $v$ which maximize the $Q_w$ and $Q_v$, respectively.
+We can update $w$ and $v$ by finding such $w$ and $v$ which maximize the $Q_w$ and $Q_v$ , respectively.
 
 - **M-step :**
 
@@ -133,27 +133,27 @@ We used the gradient descent method since we cannot obtain our new parameters as
 ### hyperparameter for each model & convergence rate comparison plot
 ![image](https://github.com/user-attachments/assets/b88d8ce2-170e-4fd4-9e81-5d0bdc68a188)
 
-note that convergence rate via EM algorithm is remarkblely slow than backpropagation.
+Note that convergence rate via EM algorithm is remarkblely slow than backpropagation.
 
 ### Accuracy & new prediction sampling (10 from test dataset)
 ![image](https://github.com/user-attachments/assets/ff98baab-ef64-4508-9a6a-2bcc1bfa3bcb)
 
-Accuracy(SGD) = 96.67%  & Accuracy(EM) = 93.33%
+Accuracy(EM) = 93.33% & Accuracy(SGD) = 96.67%
 
 ---
 
 ## Discussion and Conclusion
 
-- **Areas for Improvement in the Code Implementation Process**
+**Areas for Improvement in the Code Implementation Process**
 
 1. Computational efficiency in E-step.
    - vectorized operations like matrix multiplication are difficult to apply when implementing the E-step
-   - Unnecessary repetition was introduced during the code implementation
+   - Unnecessary repetition was introduced during the implementation of '**E_step**'
 
 2. Hyperparameter tuning.
-   - for optimizing hyperparameters, Using Cross-validation would be a way.
+   - To optimize hyperparameters, employ cross-validation.
 
-- **Comparison of the Backpropagation Method and Neural Network Training**
+**Comparison of the Backpropagation Method and Neural Network Training**
 
 Backpropagation(SGD)
 
@@ -178,7 +178,7 @@ Expectation–Maximization (EM)
 3. Model‐assumption sensitivity:
    - Since EM relies on estimating latent variables under assumed distributions, performance can degrade if those assumptions poorly reflect the true data.
 
-- **Conclusion**
+**Conclusion**
 
 Hence, EM becomes infeasible beyond shallow networks in Deep Learning.
 
