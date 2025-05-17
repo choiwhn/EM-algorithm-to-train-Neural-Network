@@ -2,6 +2,16 @@
 
 This repository contains an implementation of the multi-class neural network trained via the EM algorithm as an alternative to backpropagation a model. we implemented both models entirely with NumPy and evaluated their performance on the Iris dataset, comparing EM-based training with stochastic gradient descent(SGD)
 
+This project
+
+implements a one‑hidden‑layer multi‑layer perceptron (MLP) trained by EM,
+
+provides an equivalent MLP trained by SGD,
+
+keeps both implementations entirely in NumPy (no deep‑learning frameworks), and
+
+evaluates learning curves, convergence speed, and classification accuracy on the Iris data.
+
 ---
 
 ## EM Algorithm and Multiclass Classification
