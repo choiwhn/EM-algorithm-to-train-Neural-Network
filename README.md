@@ -61,7 +61,7 @@ $$P(Y_{ij}=1|x_j,z_j) = \frac{exp(v_i^Tz_j)}{\sum_{r=1}^g exp(v_r^Tz_j)}$$
 
 Recall that
 
-$$\log L_c{\Psi;y,z,x} \propto \log pr(Y,Z|x;\Psi) = \log pr(Y|x,z;\Psi) + \log pr(Z|x; \Psi)$$
+$$\log (L_c{\Psi;y,z,x}) \propto \log (p(Y,Z|x;\Psi)) = \log (p(Y|x,z;\Psi)) + \log (p(Z|x; \Psi))$$
 
 Then, the complete-data log likelihood for $\Psi$ is
 
@@ -69,7 +69,7 @@ $$\sum_{j=1}^n\left[ \sum_{h=1}^m [z_{hj}\  \log {u_{hj} \over 1-u_{hj}} + \log(
 
 where $z_{hj}\  \log ({u_{hj} (1-u_{hj})^{-1}}) + \log(1-u_{hj})$ is linear in $z$ whereas $\sum_{i=1}^g y_{ij}\ \log o_{ij}$ is nonlinear in $z$. 
 
-We will calculate the expectation of the complete-data log likelihood $\log L_c(\Psi;y,z,x)$ conditional on the current estimate $\Psi^{(k)}$ and the observed input and output vectors.
+We will calculate the expectation of the complete-data log likelihood $\log (L_c(\Psi;y,z,x))$ conditional on the current estimate $\Psi^{(k)}$ and the observed input and output vectors.
 
 ## E-step & M-step
 
@@ -77,7 +77,7 @@ We will calculate the expectation of the complete-data log likelihood $\log L_c(
 
 Compute the Q-function 
 
-$$Q(\Psi;\Psi^{(k)}) = E_{\Psi^{(k)}} \left[ \log L_c(\Psi;y,z,x) | y,x\right] = \sum_{j=1}^n \sum_{h=1}^m \left[ E_{\Psi^{(k)}} (Z_{hj} | y,x) \log{u_{hj} \over 1-u_{hj}} + \log(1-u_{hj})\right] + \sum_{j=1}^{n}\sum_{i=1}^g y_{ij} E_{\Psi^{(k)}}(o_{ij}|y,x) =: Q_w + Q_v$$
+$$Q(\Psi;\Psi^{(k)}) = E_{\Psi^{(k)}} \left[ \log (L_c(\Psi;y,z,x)) | y,x\right] = \sum_{j=1}^n \sum_{h=1}^m \left[ E_{\Psi^{(k)}} (Z_{hj} | y,x) \log{u_{hj} \over 1-u_{hj}} + \log(1-u_{hj})\right] + \sum_{j=1}^{n}\sum_{i=1}^g y_{ij} E_{\Psi^{(k)}}(o_{ij}|y,x) =: Q_w + Q_v$$
 
 Marginalizing out all possible $Z$ in complete-data log likelihood yields the following Q-function. 
 
