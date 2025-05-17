@@ -136,8 +136,8 @@ note that convergence rate via EM algorithm is remarkblely slow than backpropaga
 ### Accuracy & new prediction sampling (10 from test dataset)
 ![image](https://github.com/user-attachments/assets/ff98baab-ef64-4508-9a6a-2bcc1bfa3bcb)
 
-Acurracy(SGD) = 96.67% 
-Acurracy(EM) = 93.33%
+Accuracy(SGD) = 96.67% 
+Accuracy(EM) = 93.33%
 
 ---
 
