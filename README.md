@@ -121,7 +121,7 @@ We use the gradient descent method since we cannot obtain our new parameters as 
 
    - Iris labels are one-hot encoded.
 
-   - t
+   - Data split: 80 % for training, 20 % for testing.
 
    - Activations: sigmoid in the hidden layer; softmax in the output layer.
 
