@@ -20,7 +20,7 @@ Compute the Q‑function as:
 
 $$Q(\boldsymbol{\Psi},\boldsymbol{\Psi}^{(k)}) = E_{\boldsymbol{\Psi}^{(k)}}[\log (L_c(\boldsymbol{\Psi};y,z,x))|y,x]$$
 
-$$\log L_c(\boldsymbol{\Psi};y,z,x) \propto \log p(Y,Z|x;\boldsymbol{\Psi}) = \log p(Y|x,z;\boldsymbol{\Psi}) + \log p(Z|x;\boldsymbol{\Psi})$$
+$$\log (L_c(\boldsymbol{\Psi};y,z,x)) \propto \log (p(Y,Z|x;\boldsymbol{\Psi})) = \log (p(Y|x,z;\boldsymbol{\Psi})) + \log (p(Z|x;\boldsymbol{\Psi}))$$
 
 
 
