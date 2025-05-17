@@ -20,7 +20,7 @@ Compute the Q‑function as:
 
 $$Q(\boldsymbol{\Psi},\boldsymbol{\Psi}^{(k)}) = E_{\boldsymbol{\Psi}^{(k)}}[log L_c(\boldsymbol{\Psi};y,z,x)|y,x]$$
 
-$$log L_c(\boldsymbol{\Psi};y,z,x) \propto log P(Y,Z|x;\boldsymbol{\Psi}) = log P(Y|x,z;\boldsymbol{\Psi}) + log P(Z|x;\boldsymbol{\Psi})$$
+$$log L_c(\boldsymbol{\Psi};y,z,x) \propto log p(Y,Z|x;\boldsymbol{\Psi}) = log p(Y|x,z;\boldsymbol{\Psi}) + log p(Z|x;\boldsymbol{\Psi})$$
 
 
 
@@ -28,7 +28,7 @@ $$log L_c(\boldsymbol{\Psi};y,z,x) \propto log P(Y,Z|x;\boldsymbol{\Psi}) = log 
 
 $\Psi^{(k)}$ is updated by taking $\Psi^{(k+1)}$ be the value of $\Psi$ that maximizes $Q$-function
 
-$$\Psi^{(k+1)} = argmax_{\Psi}(Q(\Psi;\Psi^{(k)})) = argmax_{\Psi}(log P(Y|x,z;\boldsymbol{\Psi}) + log P(Z|x;\boldsymbol{\Psi}))$$
+$$\Psi^{(k+1)} = argmax_{\Psi}(Q(\Psi;\Psi^{(k)})) = argmax_{\Psi}(log p(Y|x,z;\boldsymbol{\Psi}) + log p(Z|x;\boldsymbol{\Psi}))$$
 
 ---
 
