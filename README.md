@@ -132,7 +132,7 @@ Iris labels ($oldsymbol{y}$) are one-hot encoded.
 
 Activations: sigmoid in the hidden layer; softmax in the output layer.
 
-\(E_step_W) computes the gradients $
+\(E_step_W\) computes the gradients $
 abla_{w_h}Q_{oldsymbol{w}}$ for the hidden weights.
 
 E_step_V computes the gradients $
