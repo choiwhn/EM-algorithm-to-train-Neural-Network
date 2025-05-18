@@ -187,3 +187,13 @@ In a shallow network with $m$ hidden units, the E-step already incurs an $O(2^m*
 
 2. Slow Convergence:
 Given its substantial time complexity, the EM algorithm becomes even less efficient when applied to deep learning.
+
+---
+
+## references
+
+Ng, S.-K., & McLachlan, G. J. (2004). Using the EM algorithm to train neural networks: Misconceptions and a new algorithm for multiclass classification. IEEE Transactions on Neural Networks, 15(3), 738–749.
+
+Raschka, S., Liu, Y. (H.), & Mirjalili, V. (2022). Machine learning with PyTorch and scikit-learn: Develop machine learning and deep learning models with Python. Packt Publishing.
+
+
