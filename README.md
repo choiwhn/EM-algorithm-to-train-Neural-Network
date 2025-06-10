@@ -25,9 +25,9 @@ Let $(x_1^T, y_1^T)^T,\;\dots,\;(x_n^T, y_n^T)^T$ be the $n$ examples available 
 
 Compute the Q‑function as:
 
-$$Q(\boldsymbol{\Psi},\boldsymbol{\Psi}^{(k)}) = E_{\boldsymbol{\Psi}^{(k)}}[\log (L_c(\boldsymbol{\Psi};y,z,x))|y,x]$$
+$$Q({\Psi},{\Psi}^{(k)}) = E_{{\Psi}^{(k)}}[\log (L_c({\Psi};y,z,x))|y,x]$$
 
-$$\log (L_c(\boldsymbol{\Psi};y,z,x)) \propto \log (p(Y,Z|x;\boldsymbol{\Psi})) = \log (p(Y|x,z;\boldsymbol{\Psi})) + \log (p(Z|x;\boldsymbol{\Psi}))$$
+$$\log (L_c({\Psi};y,z,x)) \propto \log (p(Y,Z|x;{\Psi})) = \log (p(Y|x,z;{\Psi})) + \log (p(Z|x;{\Psi}))$$
 
 
 
