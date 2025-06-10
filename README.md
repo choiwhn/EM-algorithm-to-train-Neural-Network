@@ -35,7 +35,7 @@ $$\log (L_c({\Psi};y,z,x)) \propto \log (p(Y,Z|x;{\Psi})) = \log (p(Y|x,z;{\Psi}
 
 $\Psi^{(k)}$ is updated by taking $\Psi^{(k+1)}$ be the value of $\Psi$ that maximizes $Q$-function
 
-$$\Psi^{(k+1)} = argmax_{\Psi}(Q(\Psi;\Psi^{(k)})) = argmax_{\Psi}(\log (p(Y|x,z;\boldsymbol{\Psi})) + \log (p(Z|x;\boldsymbol{\Psi})))$$
+$$\Psi^{(k+1)} = argmax_{\Psi}(Q(\Psi;\Psi^{(k)})) = argmax_{\Psi}(\log (p(Y|x,z;{\Psi})) + \log (p(Z|x;{\Psi})))$$
 
 ---
 
